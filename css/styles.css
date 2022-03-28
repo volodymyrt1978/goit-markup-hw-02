@@ -1,0 +1,12 @@
+body {
+    background-color: #FFFFFF;
+    color: rgba(117, 117, 117, 1);
+}
+
+.logo-start {
+    color: rgba(33, 150, 243, 1);
+}
+
+.logo-finish {
+    color: rgba(0, 0, 0, 1);
+}
