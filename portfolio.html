@@ -7,23 +7,23 @@
     <title>Портфолио</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body class="page">
     <header>
     <!-- Section with main navigation bar -->
 
         <nav>
-            <a href="./index.html" lang="en" class="logo-link"><span class="logo-start">Web</span><span class="logo-end">Studio</span></a>
-            <ul class="all-lists navigation">
-                <li><a href="./index.html" class="navigation-link">Студия</a></li>
-                <li><a href="" class="navigation-link">Портфолио</a></li>
-                <li><a href="" class="navigation-link">Контакты</a></li>
+            <a href="./index.html" lang="en" class="all-links"><span class="logo-start">Web</span><span class="logo-end">Studio</span></a>
+            <ul class="all-lists">
+                <li><a href="./index.html" class="all-links navigation-link">Студия</a></li>
+                <li><a href="" class="all-links navigation-link current">Портфолио</a></li>
+                <li><a href="" class="all-links navigation-link">Контакты</a></li>
             </ul>
         </nav>
 
     <!-- Section with contacts -->
         <ul class="all-lists">
-            <li><a href="mailto:info@devstudio.com" lang="en" class="contacts-link">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a></li>
+            <li><a href="mailto:info@devstudio.com" lang="en" class="all-links contacts-link">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111" class="all-links contacts-link">+38 096 111 11 11</a></li>
         </ul>
     </header>
     
@@ -31,11 +31,11 @@
         <section>
             <h1 hidden>Наши проекты</h1>
             <ul class="all-lists">
-                <li><button type="button">Все</button></li>
-                <li><button type="button">Веб-сайты</button></li>
-                <li><button type="button">Приложения</button></li>
-                <li><button type="button">Дизайн</button></li>
-                <li><button type="button">Маркетинг</button></li>
+                <li><button type="button" class="filter-button">Все</button></li>
+                <li><button type="button" class="filter-button">Веб-сайты</button></li>
+                <li><button type="button" class="filter-button">Приложения</button></li>
+                <li><button type="button" class="filter-button">Дизайн</button></li>
+                <li><button type="button" class="filter-button">Маркетинг</button></li>
             </ul>
             <ul class="all-lists">
                 <li>
@@ -88,16 +88,16 @@
         </section>
     </main>
     <footer class="pagefoot">
-        <a href="./index.html" lang="en" class="logo-link"><span class="logo-start">Web</span><span class="logo-end">Studio</span></a>
+        <a href="./index.html" lang="en" class="all-links"><span class="logo-start">Web</span><span class="logo-end">Studio</span></a>
         <address class="address">
             <ul class="all-lists">
                 <li>
                     <p>г. Киев, пр-т Леси Украинки, 26</p>
                 </li>
                 <!--Probably it will be link to google maps. But there is no any icons in figma-->
-                <li><a href="mailto:info@example.com" lang="en" class="mailtel">info@example.com</a></li>
+                <li><a href="mailto:info@example.com" lang="en" class="all-links mailtel">info@example.com</a></li>
                 <!--email address is different from header-->
-                <li><a href="tel:+380991111111" class="mailtel">+38 099 111 11 11</a></li>
+                <li><a href="tel:+380991111111" class="all-links mailtel">+38 099 111 11 11</a></li>
                 <!--phone number is different from header-->
             </ul>
         </address>

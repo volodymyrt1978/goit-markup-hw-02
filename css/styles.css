@@ -1,11 +1,23 @@
-body {
-    background-color: #FFFFFF;
-    color: rgba(117, 117, 117, 1);
+:root {
+    --primary-text-color: rgba(117, 117, 117, 1);
+    --primary-background-color: #FFFFFF;
+    --active-link-color: rgba(33, 150, 243, 1);
+    --title-text-color:rgba(33, 33, 33, 1);
+}
+
+.page {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
 }
 
 /* убираем маркеры в списках*/
 .all-lists {
     list-style: none;
+}
+
+/* убираем подчеркивание в ссылках */
+.all-links {
+    text-decoration: none;
 }
 
 /* ссылка на логотип без подчеркивания*/
@@ -28,6 +40,10 @@ body {
     text-decoration: none;
 }
 
+.navigation-link.current {
+    color:var(--active-link-color);
+}
+
 /*стилизация e-mail и телефона*/
 .contacts-link {
     color: rgba(117, 117, 117, 1);
@@ -39,7 +55,7 @@ body {
 .navigation-link:focus,
 .contacts-link:hover,
 .contacts-link:focus {
-    color: rgba(33, 150, 243, 1)
+    color:var(--active-link-color)
 }
 
 /*стилизация основной секции*/
@@ -50,7 +66,7 @@ body {
 
 /*стилизация секций "Наши преимущества", "Чем мы занимаемся"- index; "Наши проекты" - portfolio*/
 .allpurpose-title {
-    color:rgba(33, 33, 33, 1)
+    color:var(--title-text-color);
 }
 
 /*стилизация секции "Наша команда"*/
@@ -59,7 +75,7 @@ body {
 }
 
 .personal-card {
-    background-color:rgba(255, 255, 255, 1);
+    background-color:var(--primary-background-color);
 }
 
 /*стилизация Footer*/
@@ -72,4 +88,21 @@ body {
 .pagefoot .mailtel {
     color:rgba(255, 255, 255, 0.6);
     text-decoration: none;
+}
+
+/* Кнопка index */
+.hero-button {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(33, 150, 243, 1);
+}
+
+/* Кнопки фільтрації portfolio */
+.filter-button {
+    color: rgba(33, 33, 33, 1);
+    background-color: #F5F4FA;
+}
+.filter-button:hover,
+.filter-button:focus {
+    color:#FFFFFF;
+    background-color: #2196F3; 
 }
