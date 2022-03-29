@@ -3,42 +3,42 @@ body {
     color: rgba(117, 117, 117, 1);
 }
 
-/* убираем маркеры в списках */
-.list {
+/* убираем маркеры в списках*/
+.all-lists {
     list-style: none;
 }
 
 /* ссылка на логотип без подчеркивания*/
-.logolink {
+.logo-link {
     text-decoration: none;
 }
 
 /* разбиваю текст логотипа на две части по цвету шрифта*/
-.logostart {
+.logo-start {
     color: rgba(33, 150, 243, 1);
 }
 
-.logofinish {
+.logo-end {
     color: rgba(0, 0, 0, 1);
 }
 
 /*стилизация навигации сайта*/
-.navigation .link {
+.navigation-link {
     color: rgba(33, 33, 33, 1);
     text-decoration: none;
 }
 
 /*стилизация e-mail и телефона*/
-.contacts .link {
+.contacts-link {
     color: rgba(117, 117, 117, 1);
     text-decoration: none;
 }
 
 /*стилизация ссылок навигации и контактов - при наведении курсора и активации*/
-.navigation .link:hover,
-.navigation .link:focus,
-.contacts .link:hover,
-.contacts .link:focus {
+.navigation-link:hover,
+.navigation-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
     color: rgba(33, 150, 243, 1)
 }
 
@@ -48,12 +48,8 @@ body {
     color: rgba(255, 255, 255, 1);
 }
 
-/*стилизация секций "Наши преимущества", "Чем мы занимаемся"*/
-.unisection {
-    background-color: #FFFFFF;
-}
-
-.unisection .title {
+/*стилизация секций "Наши преимущества", "Чем мы занимаемся"- index; "Наши проекты" - portfolio*/
+.allpurpose-title {
     color:rgba(33, 33, 33, 1)
 }
 
@@ -62,10 +58,7 @@ body {
     background-color: rgba(245, 244, 250, 1);
 }
 
-.teamsection .title {
-    color:rgba(33, 33, 33, 1)
-}
-.teamsection .card {
+.personal-card {
     background-color:rgba(255, 255, 255, 1);
 }
 
