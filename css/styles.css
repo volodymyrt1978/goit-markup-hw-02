@@ -26,12 +26,17 @@
 }
 
 /* разбиваю текст логотипа на две части по цвету шрифта*/
-.logo-start {
+.logoheader-start,
+.logofooter-start {
     color: rgba(33, 150, 243, 1);
 }
 
-.logo-end {
+.logoheader-end {
     color: rgba(0, 0, 0, 1);
+}
+
+.logofooter-end {
+    color:rgba(255, 255, 255, 1)
 }
 
 /*стилизация навигации сайта*/
