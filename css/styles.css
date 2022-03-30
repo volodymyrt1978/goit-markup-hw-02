@@ -8,51 +8,64 @@
 .page {
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 /* убираем маркеры в списках*/
-.all-lists {
+.default-lists {
     list-style: none;
 }
 
 /* убираем подчеркивание в ссылках */
-.all-links {
-    text-decoration: none;
-}
-
-/* ссылка на логотип без подчеркивания*/
-.logo-link {
-    text-decoration: none;
-}
-
-/* разбиваю текст логотипа на две части по цвету шрифта*/
-.logoheader-start,
-.logofooter-start {
-    color: rgba(33, 150, 243, 1);
-}
-
-.logoheader-end {
-    color: rgba(0, 0, 0, 1);
-}
-
-.logofooter-end {
-    color:rgba(255, 255, 255, 1)
-}
-
-/*стилизация навигации сайта*/
-.navigation-link {
+.default-links {
     color: rgba(33, 33, 33, 1);
     text-decoration: none;
 }
 
+/* разбиваю текст логотипа на две части по цвету шрифта*/
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo.header-start,
+.logo.footer-start {
+    color: rgba(33, 150, 243, 1);
+}
+
+.logo.header-end {
+    color: rgba(0, 0, 0, 1);
+}
+
+.logo.footer-end {
+    color:rgba(255, 255, 255, 1)
+}
+
+/*стилизация навигации сайта*/
+.navigation-link,
+.contacts-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+
+/* Синим цветом подсвечивается активная страница */
 .navigation-link.current {
     color:var(--active-link-color);
 }
 
-/*стилизация e-mail и телефона*/
+/*стилизация e-mail и телефона переопределение цвета текста*/
 .contacts-link {
-    color: rgba(117, 117, 117, 1);
-    text-decoration: none;
+    color: var(--primary-text-color)
 }
 
 /*стилизация ссылок навигации и контактов - при наведении курсора и активации*/
@@ -65,17 +78,50 @@
 
 /*стилизация основной секции*/
 .hero {
-    background-color:rgba(47, 48, 58, 1);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
     color: rgba(255, 255, 255, 1);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background-color:rgba(47, 48, 58, 1);
 }
 
-/*стилизация секций "Наши преимущества", "Чем мы занимаемся"- index; "Наши проекты" - portfolio*/
-.allpurpose-title {
+/* Кнопка index */
+.hero-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(33, 150, 243, 1);
+}
+
+/* стилизация секции "Наши преимущества" */
+.advantages-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
     color:var(--title-text-color);
 }
 
+/* стилизация секции "Чем мы занимаемся" */
+.trends.title,
+.teamsection.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--title-text-color);
+
+}
 /*стилизация секции "Наша команда"*/
-.teamsection{
+.teamsection {
     background-color: rgba(245, 244, 250, 1);
 }
 
@@ -83,26 +129,37 @@
     background-color:var(--primary-background-color);
 }
 
+.personal-card .name,
+.personal-card .profession {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;    
+}
+.name {
+    font-weight: 500;
+    color: var(--title-text-color);
+}
+
 /*стилизация Footer*/
 .pagefoot {
     background-color: rgba(47, 48, 58, 1);
 }
 .pagefoot .address {
-    color:rgba(255, 255, 255, 1)
+    font-style: normal;
+    color:rgba(255, 255, 255, 1);    
 }
 .pagefoot .mailtel {
+    font-style: normal;
     color:rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
 
-/* Кнопка index */
-.hero-button {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(33, 150, 243, 1);
-}
-
 /* Кнопки фільтрації portfolio */
 .filter-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
     color: rgba(33, 33, 33, 1);
     background-color: #F5F4FA;
 }
@@ -110,4 +167,18 @@
 .filter-button:focus {
     color:#FFFFFF;
     background-color: #2196F3; 
+}
+
+/* Стилизация секции "Наши проекты" */
+.projects-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+
+.projects-description {
+    font-size: 16px;
+    line-height: 1.88;
 }
