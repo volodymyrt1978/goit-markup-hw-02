@@ -89,10 +89,10 @@
     background-color:rgba(47, 48, 58, 1);
 }
 
-/* Кнопка index */
+/* Кнопка index */ /* button не наследуется из body */
 .hero-button {
     font-family: Roboto, sans-serif;
-    font-style: normal;
+    font-style: normal; 
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -144,7 +144,7 @@
     color: var(--title-text-color);
 }
 
-/*стилизация Footer*/
+/*стилизация Footer*/ /* font-style: normal не наследуется из body*/
 .pagefoot {
     background-color: rgba(47, 48, 58, 1);
 }
@@ -163,7 +163,7 @@
     color:var(--active-link-color)
 }
 
-/* Кнопки фільтрації portfolio */
+/* Кнопки фільтрації portfolio */ /* button не наследуется из body */
 .filter-button {
     font-family: Roboto, sans-serif;
     font-style: normal;
