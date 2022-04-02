@@ -5,8 +5,8 @@
     --title-text-color:rgba(33, 33, 33, 1);
 }
 
-/* Класс определяет <body> */
-.page {
+/* Стилизация <body> */
+body {
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
