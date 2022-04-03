@@ -207,4 +207,5 @@ body {
 .projects-description {
     font-size: 16px;
     line-height: 1.88;
+    color: var(--primary-text-color)
 }
